@@ -1,4 +1,4 @@
-{% set version = '0.10.0' %}
+{% set version = "0.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3/mlr3_{{ version }}.tar.gz
-  sha256: cf184bb9831de8ce807e878516961a08aae9fb0703fb89643d65c3ba968c38ab
+  sha256: 14aa28128aecb6624be48a361fc798b85d7d145fa1383e44109aaac054db0962
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -61,14 +61,11 @@ test:
 about:
   home: https://mlr3.mlr-org.com, https://github.com/mlr-org/mlr3
   license: LGPL-3.0-only
-  summary: Efficient, object-oriented programming on the building blocks of machine learning.
-    Provides 'R6' objects for tasks, learners, resamplings, and measures. The package
-    is geared towards scalability and larger datasets by supporting parallelization
-    and out-of-memory data-backends like databases. While 'mlr3' focuses on the core
-    computational operations, add-on packages provide additional functionality.
+  summary: Efficient, object-oriented programming on the building blocks of machine learning. Provides 'R6' objects for tasks, learners, resamplings, and measures. The package is geared towards scalability and larger datasets by supporting parallelization and out-of-memory data-backends like databases. While 'mlr3' focuses
+    on the core computational operations, add-on packages provide additional functionality.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
