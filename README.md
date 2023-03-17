@@ -1,11 +1,11 @@
-About r-mlr3
-============
+About r-mlr3-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3-feedstock/blob/main/LICENSE.txt)
 
 Home: https://mlr3.mlr-org.com, https://github.com/mlr-org/mlr3
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3-feedstock/blob/main/LICENSE.txt)
 
 Summary: Efficient, object-oriented programming on the building blocks of machine learning. Provides 'R6' objects for tasks, learners, resamplings, and measures. The package is geared towards scalability and larger datasets by supporting parallelization and out-of-memory data-backends like databases. While 'mlr3' focuses on the core computational operations, add-on packages provide additional functionality.
 
