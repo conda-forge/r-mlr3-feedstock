@@ -1,4 +1,4 @@
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3/mlr3_{{ version }}.tar.gz
-  sha256: 369532a9676aeae495818976da59f905e528e8bdcc8b9a9ae6460a06e3567426
+  sha256: 4a0f1138b33a6d79eef6f44068a13f3549e91c966b415a86065a283d464cd6be
 
 build:
   merge_build_host: true  # [win]
