@@ -27,6 +27,7 @@ requirements:
   host:
     - r-base
     - r-r6 >=2.4.1
+    - r-rhpcblasctl
     - r-backports
     - r-checkmate >=2.0.0
     - r-data.table >=1.14.2
@@ -36,14 +37,15 @@ requirements:
     - r-lgr >=0.3.4
     - r-mlbench
     - r-mlr3measures >=0.4.1
-    - r-mlr3misc >=0.10.0
+    - r-mlr3misc >=0.12.0
     - r-palmerpenguins
-    - r-paradox >=0.8.0
+    - r-paradox >=0.10.0
     - r-parallelly
     - r-uuid
   run:
     - r-base
     - r-r6 >=2.4.1
+    - r-rhpcblasctl
     - r-backports
     - r-checkmate >=2.0.0
     - r-data.table >=1.14.2
@@ -53,9 +55,9 @@ requirements:
     - r-lgr >=0.3.4
     - r-mlbench
     - r-mlr3measures >=0.4.1
-    - r-mlr3misc >=0.10.0
+    - r-mlr3misc >=0.12.0
     - r-palmerpenguins
-    - r-paradox >=0.8.0
+    - r-paradox >=0.10.0
     - r-parallelly
     - r-uuid
 
