@@ -1,4 +1,4 @@
-{% set version = "0.17.0" %}
+{% set version = "0.17.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3/mlr3_{{ version }}.tar.gz
-  sha256: 4a0f1138b33a6d79eef6f44068a13f3549e91c966b415a86065a283d464cd6be
+  sha256: 4417e8b16cf82ed38820123f0a879eb68212874adc526f5c667d2c0528e8d760
 
 build:
   merge_build_host: true  # [win]
@@ -27,6 +27,7 @@ requirements:
   host:
     - r-base
     - r-r6 >=2.4.1
+    - r-rhpcblasctl
     - r-backports
     - r-checkmate >=2.0.0
     - r-data.table >=1.14.2
@@ -36,14 +37,15 @@ requirements:
     - r-lgr >=0.3.4
     - r-mlbench
     - r-mlr3measures >=0.4.1
-    - r-mlr3misc >=0.10.0
+    - r-mlr3misc >=0.12.0
     - r-palmerpenguins
-    - r-paradox >=0.8.0
+    - r-paradox >=0.10.0
     - r-parallelly
     - r-uuid
   run:
     - r-base
     - r-r6 >=2.4.1
+    - r-rhpcblasctl
     - r-backports
     - r-checkmate >=2.0.0
     - r-data.table >=1.14.2
@@ -53,9 +55,9 @@ requirements:
     - r-lgr >=0.3.4
     - r-mlbench
     - r-mlr3measures >=0.4.1
-    - r-mlr3misc >=0.10.0
+    - r-mlr3misc >=0.12.0
     - r-palmerpenguins
-    - r-paradox >=0.8.0
+    - r-paradox >=0.10.0
     - r-parallelly
     - r-uuid
 
