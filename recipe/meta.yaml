@@ -25,37 +25,37 @@ requirements:
   host:
     - r-base
     - r-r6 >=2.4.1
-    - r-rhpcblasctl
-    - r-backports
+    - r-backports >=1.5.0
     - r-checkmate >=2.0.0
-    - r-data.table >=1.14.2
-    - r-evaluate
+    - r-cli
+    - r-data.table >=1.15.0
+    - r-evaluate >=1.0.4
     - r-future
     - r-future.apply >=1.5.0
     - r-lgr >=0.3.4
     - r-mlbench
-    - r-mlr3measures >=0.4.1
-    - r-mlr3misc >=0.12.0
+    - r-mlr3measures >=1.0.0
+    - r-mlr3misc >=0.18.0
     - r-palmerpenguins
-    - r-paradox >=0.10.0
+    - r-paradox >=1.0.1
     - r-parallelly
     - r-uuid
   run:
     - r-base
     - r-r6 >=2.4.1
-    - r-rhpcblasctl
-    - r-backports
+    - r-backports >=1.5.0
     - r-checkmate >=2.0.0
-    - r-data.table >=1.14.2
-    - r-evaluate
+    - r-cli
+    - r-data.table >=1.15.0
+    - r-evaluate >=1.0.4
     - r-future
     - r-future.apply >=1.5.0
     - r-lgr >=0.3.4
     - r-mlbench
-    - r-mlr3measures >=0.4.1
-    - r-mlr3misc >=0.12.0
+    - r-mlr3measures >=1.0.0
+    - r-mlr3misc >=0.18.0
     - r-palmerpenguins
-    - r-paradox >=0.10.0
+    - r-paradox >=1.0.1
     - r-parallelly
     - r-uuid
 
